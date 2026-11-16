@@ -9,6 +9,7 @@ description: 使用 Azure VM 內建 DNS 及自動 HTTPS，從公開通用編譯�
 * 可以使用 SSH 及 `sudo` 的管理帳號
 * Azure NSG 及 VM 防火牆允許公網 TCP 80、443；SSH 22 只開放給管理 IP
 * VM 可下載 Ubuntu 套件並向 HTTPS 憑證服務連線
+* `/tmp` 允許執行校驗後的編譯安裝工具，不能掛載為 `noexec`
 
 建議使用新 VM。安裝器不會覆蓋其他程式的端口或未受管理的既有安裝。
 不要公開後端端口 8096。
